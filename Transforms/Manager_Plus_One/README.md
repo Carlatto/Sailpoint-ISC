@@ -24,7 +24,7 @@ Attribute Mapping 2:
 - name: Manager ISC ID (technical name: managerIscId)
 - source: Use your authoritative source (ex. Workday)
 - attribute: Use any attribute (ex. FILENUMBER)
-- transform: Manager_ISC_ID
+- transform: Manager-ISC_ID
 
 Attribute Mapping 3:
 - name: Manager Plus One ISC ID (technical name: managerPlusOneIscId)
