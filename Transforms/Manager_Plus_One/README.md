@@ -15,18 +15,18 @@ Attribute Mapping:
 
 With Adaptive Approval, it is possible to setup an Approval Policy that requires the Manager's Manager to approve.  For this to work, three new Identity Profile Attribute Mappings will need to be created.  Recommendation is to apply these attributes one at a time, Identity errors could occur if they are applied at the same time.  
 
-Attribute Mapping 1: 
+Attribute Mapping to get ISC Native Identity for the Identity: 
 - name: ISC ID (technical name: iscId)
 - source: Identity Security Cloud Governance Connector source
 - attribute: id
 
-Attribute Mapping 2:
+Attribute Mapping to get ISC Native Identity for the Identity's manager:
 - name: Manager ISC ID (technical name: managerIscId)
 - source: Use your authoritative source (ex. Workday)
 - attribute: Use any attribute (ex. FILENUMBER)
 - transform: Manager-ISC_ID
 
-Attribute Mapping 3:
+Attribute Mapping to get ISC Native Identity for the Identity's manager's manager:
 - name: Manager Plus One ISC ID (technical name: managerPlusOneIscId)
 - source: Use your authoritative source (ex. Workday)
 - attribute: Use any attribute (ex. MANAGER_ID)
